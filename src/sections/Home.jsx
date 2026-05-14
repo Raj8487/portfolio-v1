@@ -33,7 +33,7 @@ const glowVariants = {
 
 const Home = React.forwardRef((props, ref) => {
   const roles = useMemo(
-    () => ["Software Developer", "Web Developer"],
+    () => ["ReactJs Developer", "Web Developer"],
     []
   );
   const [index, setIndex] = useState(0);
@@ -154,15 +154,16 @@ const Home = React.forwardRef((props, ref) => {
                 shadow-lg hover:scale-105 transition-all"
               >
                 View My Work
-              </a>
-              <a
-                href="/resume.pdf"
-                
-                className="px-6 py-3 rounded-full text-lg font-medium text-black bg-white 
-                hover:bg-gray-200 shadow-lg hover:scale-105 transition-all"
-              >
-                My Resume
-              </a>
+              </a>                                  
+             <a
+  href="/raj new resume.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="px-6 py-3 rounded-full text-lg font-medium text-black bg-white 
+  hover:bg-gray-200 shadow-lg hover:scale-105 transition-all"
+>
+  My Resume
+</a>
             </motion.div>
 
             {/* socials */}
@@ -214,7 +215,7 @@ const Home = React.forwardRef((props, ref) => {
           />
           <motion.img
             src={avatar}
-            alt="Gaurav Gupta avatar"
+            alt="Raj Gupta avatar"
             className="absolute top-1/2 -translate-y-1/2 object-contain select-none pointer-events-none"
             style={{ right: "-30px", width: "min(45vw, 780px)", maxHeight: "90vh" }}
             initial={{ opacity: 0, y: 40, scale: 0.95 }}

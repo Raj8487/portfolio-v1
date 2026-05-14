@@ -183,15 +183,17 @@ export default function Projects() {
         </div>
 
         {/* View Project Button */}
-        <div className={`absolute ${isMobile ? "bottom-20" : "bottom-10"}`}>
-          <a
-           href="#"
-           onClick={(e) => e.preventDefault()}
-             className="inline-block px-6 py-3 font-semibold rounded-lg bg-white text-black hover:bg-gray-200 transition-all"
-            >
-            View Project
-          </a>
-        </div>
+        {/* View Project Button */}
+<div className={`absolute ${isMobile ? "bottom-20" : "bottom-10"}`}>
+  <a
+    href={activeProject.link}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-block px-6 py-3 font-semibold rounded-lg bg-white text-black hover:bg-gray-200 transition-all"
+  >
+    View Project
+  </a>
+</div>
       </div>
     </section>
   );
